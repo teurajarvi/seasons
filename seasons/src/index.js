@@ -7,8 +7,10 @@ class App extends React.Component {
     super(props); //super is the React constructor
     // THIS IS THE ONLY TIME we do direct assignment to this.state!
     // setState must be used in other cases.
-    this.state = { lat: null, errorMessage: "" }; //latitude
+    this.state = { lat: null, errorMessage: "" }; //lat==latitude
   }
+
+  state = { lat: null, errorMessage: "" };
 
   componentDidMount() {
     console.log("My component was rendered to the screen");

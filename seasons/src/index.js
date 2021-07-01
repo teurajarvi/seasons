@@ -12,6 +12,11 @@ class App extends React.Component {
     this.state = { lat: null, errorMessage: "" }; //lat==latitude
   }
 
+  /**
+   * Alternative way to implement constructor
+   * Here the Babel will create the contructor according
+   * to the state initialized
+   */
   //state = { lat: null, errorMessage: "" };
 
   componentDidMount() {
